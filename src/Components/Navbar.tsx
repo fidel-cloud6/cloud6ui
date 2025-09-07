@@ -3,7 +3,7 @@ import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, 
 
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
-import theme, { COLORS } from "../theme";
+// import theme, { COLORS } from "../theme";
 
 const pages = ["Home", "Services", "About"];
 
