@@ -9,7 +9,7 @@ import "leaflet/dist/leaflet.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/cloud6ui/">
       <HelmetProvider>
         <App />
       </HelmetProvider>
