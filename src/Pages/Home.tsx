@@ -40,8 +40,8 @@ function Home() {
         />
         {/* <meta property="og:image" content="https://yourdomain.com/banner.png" /> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com" />
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <meta property="og:url" content="https://stratus6.com" />
+        <link rel="canonical" href="https://stratus6.com/" />
       </Helmet>
       <Box id="home" component="main">
         <Container maxWidth={false} className="header-content" sx={{ height: { xs: "500px", md: "100vh" } }}>
