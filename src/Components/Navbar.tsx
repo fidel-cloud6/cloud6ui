@@ -5,7 +5,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
 // import theme, { COLORS } from "../theme";
 
-const pages = ["Home", "Services", "About"];
+const pages = [
+  { label: "Home", href: "#" },
+  { label: "Contact", href: "#contact" },
+];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -25,7 +28,7 @@ function Navbar() {
           <Toolbar disableGutters>
             {/* Common navbar section */}
             <>
-              <AdbIcon sx={{ mr: 1 }} />
+              {/* <AdbIcon sx={{ mr: 1 }} /> */}
               <Typography
                 variant="h6"
                 noWrap
@@ -34,21 +37,26 @@ function Navbar() {
                 sx={{
                   mr: 2,
                   flexGrow: 1,
-                  fontFamily: "monospace",
+                  fontFamily: "orbitron",
                   fontWeight: 700,
                   letterSpacing: ".3rem",
                   color: "inherit",
                   textDecoration: "none",
                 }}>
-                LOGO1
+                Stratus<span style={{ color: "blue" }}>6</span>
               </Typography>
             </>
             {/* Desktop Navbar Section*/}
             <>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <Box sx={{ flexGrow: 0.2, display: { xs: "none", md: "flex" } }}>
                 {pages.map(page => (
-                  <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-                    {page}
+                  <Button
+                    key={page.label}
+                    component="a"
+                    href={page.href}
+                    // onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}>
+                    {page.label}
                   </Button>
                 ))}
               </Box>
@@ -76,8 +84,10 @@ function Navbar() {
                   onClose={handleCloseNavMenu}
                   sx={{ display: { xs: "block", md: "none" } }}>
                   {pages.map(page => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                      <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                    <MenuItem key={page.label} onClick={handleCloseNavMenu}>
+                      <Typography component="a" href={page.href} sx={{ textAlign: "center" }}>
+                        {page.label}
+                      </Typography>
                     </MenuItem>
                   ))}
                 </Menu>
