@@ -7,8 +7,9 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MapIcon from "@mui/icons-material/Map";
 import Marquee from "react-fast-marquee";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+import { Backup } from "@mui/icons-material";
 
+import "leaflet/dist/leaflet.css";
 // import bg1 from "../assets/bg1.png";
 import mobiLogo from "../assets/Mobi,_Inc._logo.png";
 import rainbirdLogo from "../assets/rain-bird-logo-png-transparent.png";
@@ -17,7 +18,7 @@ import usaMap from "../assets/USAMAP.jpg";
 import AccordionCard from "../Components/AccordionCard";
 import GridCard from "../Components/Card";
 import StarBG from "../Components/StarBG";
-import { Backup } from "@mui/icons-material";
+import ServicesBody2 from "../Components/ServicesBody2";
 
 function Home() {
   const theme = useTheme();
@@ -31,12 +32,12 @@ function Home() {
         <title>Stratus6</title>
         <meta
           name="description"
-          content="patrol security, on-call security, event security, Southern California, Los Angeles, Orange County, San Diego."
+          content="Tech consulting agency focused on IT Solutions, app development, cloud development and more"
         />
         <meta property="og:title" content="Stratus6" />
         <meta
           property="og:description"
-          content="patrol security, on-call security, event security, Southern California, Los Angeles, Orange County, San Diego."
+          content="Tech consulting agency focused on IT Solutions, app development, cloud development and more"
         />
         {/* <meta property="og:image" content="https://yourdomain.com/banner.png" /> */}
         <meta property="og:type" content="website" />
@@ -159,13 +160,16 @@ function Home() {
                   alt="usaMap"
                   sx={{ maxWidth: { xs: "100%", md: "500px" } }}
                 />
-                <ul>
-                  <li>IOT (Internet of Things) Connectivity</li>
-                  <li>Manufcaturing</li>
-                  <li>Sutainability</li>
-                  <li>Mobile App Development</li>
-                  <li>Software Development</li>
-                </ul>
+                <div>
+                  <Typography variant="h5">Experts in:</Typography>
+                  <ul>
+                    <li>IOT (Internet of Things) Connectivity</li>
+                    <li>Manufcaturing</li>
+                    <li>Sutainability</li>
+                    <li>Mobile App Development</li>
+                    <li>Software Development</li>
+                  </ul>
+                </div>
               </Box>
             </AccordionCard>
           </>
@@ -184,6 +188,8 @@ function Home() {
           </Marquee>
         </Box>
       </Box>
+
+      <ServicesBody2 />
 
       {/* Contact Us */}
       <Box
@@ -206,7 +212,7 @@ function Home() {
                 <PhoneIcon sx={{ mr: 1 }} /> Contact Us
               </Typography>
               <Box sx={{ maxWidth: "350px", height: "auto" }}>
-                <p>
+                {/* <p>
                   <span style={{ fontWeight: "bold" }}>Address: </span>
                   <a
                     // href="https://www.google.com/maps?q=336+N+Gaffey+St+Floor+2,+San+Pedro,+CA+90731"
@@ -221,11 +227,11 @@ function Home() {
                   <a href="tel:+1TBD" style={{ color: "inherit", textDecoration: "none" }}>
                     TBD
                   </a>
-                </p>
+                </p> */}
                 <p>
                   <span style={{ fontWeight: "bold" }}>Email: </span>
-                  <a href="mailto:tbd@gmail.com" style={{ color: "inherit", textDecoration: "none" }}>
-                    tbd@gmail.com
+                  <a href="mailto:business@stratus6.com" style={{ color: "inherit", textDecoration: "none" }}>
+                    business@stratus6.com
                   </a>
                 </p>
               </Box>

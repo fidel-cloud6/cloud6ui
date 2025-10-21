@@ -11,8 +11,8 @@ function Footer() {
         justifyContent: "center",
         alignItems: "center",
       }}>
-      <Typography>
-        Contact us: <a href="mailto:info@cloud6group.com">info@cloud6group.com</a>
+      <Typography color="white">
+        Made by: <a href="mailto:business@stratus6.com">business@stratus6.com</a>
       </Typography>
     </BottomNavigation>
   );
