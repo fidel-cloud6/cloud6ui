@@ -33,8 +33,8 @@ function ServicesBody2() {
       icon: "☁️",
     },
     {
-      title: "Security First",
-      description: "Enterprise-grade compliance and Security certified professionals",
+      title: "Smart Devices",
+      description: "Smart Device development from hardware to firmware",
       icon: "🔒",
     },
   ];
