@@ -1,6 +1,6 @@
-import React, { type ReactNode } from "react";
+import React from "react";
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import security from "../assets/security.png";
 import ai from "../assets/ai.png";
@@ -158,7 +158,7 @@ export default ServicesBody2;
 
 type ServicesCardProps = {
   sector: string;
-  img: ReactNode;
+  img: any;
   problem: string;
   solution: string;
 };
