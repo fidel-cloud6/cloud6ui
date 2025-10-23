@@ -149,6 +149,13 @@ html {
   -webkit-text-stroke: 2px black;
 }
 
+.card-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #213547;
+  text-align: left;
+}
+
 /* ------------------- Services Body2/Hexagon Grid ------------------------ */
 .hexagon-grid-container {
   display: flex;
